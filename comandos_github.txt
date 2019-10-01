@@ -1,0 +1,49 @@
+Comandos github
+
+Criando uma chave de acesso:
+
+ssh-keugen -t rsa -b 4096 -C "mchlcenteno@gmail.com"
+
+AQUI VAI APARECER A CHAVE
+
+Verificar e add nossa chave ao nosso agente
+para verificar se ta rodando
+
+eval "$(ssh-agent -s)"
+AGORA QUE ESTA FUNCIONANDO VAMOS ADICIONAR
+ssh-add .ssh/id_rsa
+
+AGORA COPIAR A CHAVE CRIADA
+
+clip < .ssh/id_rsa.pub
+
+Isso é equivalente ao Ctrl C
+
+AGORA VAI NO github Settings> SSH and GPG keys
+>new SSH keys
+
+COLA EM keys e coloca um nome
+
+volta no Bash
+PARA VERIFICAR E CONFIRMAR LOGIN
+ssh -T git@github.com 
+
+
+Para clonar um arquivo, primeiro criar novo repositório no git, ir em clonar ou download
+Abrir o local que se quer clonar, clicar com o direiro e git Bash here
+
+após dar um pwd e digitar:
+git clone "Aqui só colar o que foi clonado anteriormente"
+Pronto! 
+
+Pra entrar na pasta basta
+cd command_init_github
+pwd para entrar no diretório
+ls para verificar
+ls -a para verificar pastas ocultas dentro do diretório (.git) que é o repositório local
+
+Para adicionar arquivo
+
+git add *
+git status
+git commit -m "Escreva aqui o comentário de mudança"
