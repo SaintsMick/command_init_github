@@ -43,7 +43,7 @@ ls para verificar
 ls -a para verificar pastas ocultas dentro do diretório (.git) que é o repositório local
 
 Para adicionar arquivo
-git push para logar no windows 
+git push para logar no windows e sempre terminar com git push para mandar dados para o github
 
 git add *
 git status
