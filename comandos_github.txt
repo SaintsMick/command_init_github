@@ -43,7 +43,12 @@ ls para verificar
 ls -a para verificar pastas ocultas dentro do diretório (.git) que é o repositório local
 
 Para adicionar arquivo
+git push para logar no windows 
 
 git add *
 git status
 git commit -m "Escreva aqui o comentário de mudança"
+se não der colocar email e nome real do github e fazer de novo
+
+
+
